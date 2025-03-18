@@ -3,6 +3,7 @@ from tkinter import filedialog
 import cv2
 import matplotlib.pyplot as plt
 from ultralytics import YOLO  # Biblioteca YOLO do ultralytics
+import os
 
 def carregar_modelo(caminho_modelo):
     """
@@ -61,7 +62,7 @@ def inserir_imagem():
 
 
 def main():
-    caminho_modelo = 'best_model/my_model.pt'  # Substitua pelo caminho do seu modelo YOLO
+    caminho_modelo = '../best_model/my_model.pt'  # Substitua pelo caminho do seu modelo YOLO
     caminho_imagem = inserir_imagem()  # Interface para inserir imagem
 
     modelo = carregar_modelo(caminho_modelo)
