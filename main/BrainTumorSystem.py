@@ -3,7 +3,6 @@ from tkinter import filedialog
 import cv2
 import matplotlib.pyplot as plt
 from ultralytics import YOLO  # Biblioteca YOLO do ultralytics
-import os
 
 def carregar_modelo(caminho_modelo):
     """
